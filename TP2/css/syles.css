@@ -1,68 +1,110 @@
-*{
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: 'Gayathri', sans-serif;
 }
 
-body{
-    background-color: #5e6f64;
+body {
+    background-color: #35d0ba;
 }
 
-.contenedor{
-    width: 30%;
+.contenedor-padre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.contenedor-izquierda {
+    width: 58%;
+}
+
+.container-izq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-izq h1 {
+    font-size: 50px;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 700;
+    border-radius: 60px;
+    padding: 3px 20px;
+    margin-bottom: 30px;
+    background-color: #ffcd3c;
+    border: 5px solid;
+
+}
+
+.welcome {
+    width: 60%;
+}
+
+.contenedor-derecha {
+    width: 42%;
+}
+
+
+.container-der {
+
+    width: 60%;
     margin: auto;
-    margin-top: 20px;
     text-align: center;
-    background-color: #eeecda;
-    -webkit-box-shadow: -5px 2px 18px 2px rgba(0,0,0,0.6);
-    -moz-box-shadow: -5px 2px 18px 2px rgba(0,0,0,0.6);
-    box-shadow: -5px 2px 18px 2px rgba(0,0,0,0.6);
-
+    background-color: #ffcd3c;
+    -webkit-box-shadow: -5px 2px 18px 2px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: -5px 2px 18px 2px rgba(0, 0, 0, 0.6);
+    box-shadow: -5px 2px 18px 2px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    border: 5px solid;
 }
 
-.user{
-    width: 35%;
+.user {
+    width: 32%;
     display: block;
     margin: auto;
     padding-top: 30px;
     margin-bottom: 50px;
 }
 
-.titulo{
+.titulo {
     margin-bottom: 20px;
 }
 
-.formulario{
+.formulario {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-input, .entrar{
+input,
+.entrar {
     height: 10vh;
     width: 90%;
     border-radius: 5px;
     border: 1px solid #eaeaea;
+    padding-left: 5px;
+    margin-bottom: 5px;
 }
 
-.entrar{
+.entrar {
     margin-top: 15px;
     margin-bottom: 20px;
-    background-color: #F50057;
     text-transform: uppercase;
-    color: #fff;
     font-weight: bold;
+    text-align: center;
+    border: 5px solid #d92027;
 }
 
-.pass{
+.pass {
     border-radius: 60px;
     padding: 3px 20px;
     margin-bottom: 30px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #eaeaea ;
 }
 
-.link{
-    border: 1px solid red;
-
-}
